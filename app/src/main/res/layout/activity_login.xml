@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="@color/colorWhite">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/txt_logintitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/toolbar_text_size"
+            android:text="CabShop"
+            android:textColor="@color/colorWhite"
+            android:gravity="center"/>
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/lnr_mobNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal"
+        android:layout_margin="40dp">
+
+        <TextView
+            android:id="@+id/txt_countryCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+91-"
+            android:layout_marginEnd="2dp"
+            android:gravity="center"
+            android:textSize="@dimen/login_edittext_size"
+            android:textColor="@color/colorBlack"/>
+
+
+        <EditText
+            android:id="@+id/edt_mobile_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/login_edittext_size"
+            android:hint="Mobile Number"
+            android:textColor="@color/colorBlack"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lnr_mobNo"
+        android:gravity="center"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp">
+
+        <Button
+            android:id="@+id/btn_OTP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_corner"
+            android:text="Send OTP"
+            android:textColor="@color/colorPrimaryFaint"
+            android:textSize="@dimen/loginBtn_text_size"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/btn_Register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_corner_filled"
+            android:layout_below="@+id/btn_OTP"
+            android:layout_marginTop="20dp"
+            android:text="Register"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/loginBtn_text_size"
+            android:textAllCaps="false"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
