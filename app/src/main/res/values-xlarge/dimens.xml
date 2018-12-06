@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="OTP_note_text_size">16sp</dimen>
+    <dimen name="login_edittext_size">22sp</dimen>
+    <dimen name="toolbar_text_size">22sp</dimen>
+    <dimen name="loginBtn_text_size">20sp</dimen>
+    <dimen name="edtText_padding">10dp</dimen>
+
+    <dimen name="list_row_image_height">250dp</dimen>
+    <dimen name="list_row_textSize">18sp</dimen>
+    <dimen name="list_row_textRightMargin">10dp</dimen>
+</resources>
